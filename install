@@ -1,3 +1,4 @@
 #!/bin/zsh
 
-stow -t ~/.pi/agent/ .
+stow -t ~/.pi/agent/themes themes
+stow -t ~/.pi/agent/extensions extensions
