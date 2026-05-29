@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-mkdir -p "$HOME/.pi/agent/themes" "$HOME/.pi/agent/extensions"
-
-stow -t "$HOME/.pi/agent/themes" themes
-stow -t "$HOME/.pi/agent/extensions" extensions
+for package in themes extensions prompts; do
+  mkdir -p "$HOME/.pi/agent/$package"
+  stow -t "$HOME/.pi/agent/$package" "$package"
+done
