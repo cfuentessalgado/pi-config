@@ -7,9 +7,13 @@ This repo is meant to be checked out locally and symlinked into `~/.pi/agent` wi
 ## What's included
 
 - `themes/catppuccin-mocha.json` — Catppuccin Mocha theme for the Pi TUI.
+- `themes/tokyonight.json` — Tokyo Night theme for the Pi TUI.
 - `extensions/view-last-response/` — Pi extension that opens the last assistant response in `$VISUAL`, `$EDITOR`, or `vi`.
   - Command: `view-last-response`
   - Shortcut: `ctrl+alt+g`
+- `extensions/copy-last-response/` — Pi extension that copies the last assistant response to the clipboard.
+  - Command: `copy-last-response`
+  - Shortcut: `ctrl+alt+c`
 - `install` — convenience script for stowing this repo into `~/.pi/agent`.
 
 ## Requirements
@@ -67,9 +71,11 @@ stow -D -t ~/.pi/agent/extensions extensions
 ```text
 .
 ├── extensions/
+│   ├── copy-last-response/
 │   └── view-last-response/
 ├── themes/
-│   └── catppuccin-mocha.json
+│   ├── catppuccin-mocha.json
+│   └── tokyonight.json
 ├── .gitignore
 ├── .stow-local-ignore
 ├── AGENTS.md
