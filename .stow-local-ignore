@@ -1,3 +1,5 @@
 ^/README.*
+^/AGENTS\.md
+^/\.gitignore
 ^/install
 
