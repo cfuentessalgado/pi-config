@@ -11,9 +11,6 @@ This repo is meant to be checked out locally and symlinked into `~/.pi/agent` wi
 - `extensions/view-last-response/` — Pi extension that opens the last assistant response in `$VISUAL`, `$EDITOR`, or `vi`.
   - Command: `view-last-response`
   - Shortcut: `ctrl+alt+g`
-- `extensions/copy-last-response/` — Pi extension that copies the last assistant response to the clipboard.
-  - Command: `copy-last-response`
-  - Shortcut: `ctrl+alt+c`
 - `install` — convenience script for stowing this repo into `~/.pi/agent`.
 
 ## Requirements
@@ -71,7 +68,6 @@ stow -D -t ~/.pi/agent/extensions extensions
 ```text
 .
 ├── extensions/
-│   ├── copy-last-response/
 │   └── view-last-response/
 ├── themes/
 │   ├── catppuccin-mocha.json
