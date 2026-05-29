@@ -1,4 +1,8 @@
 #!/bin/zsh
 
-stow -t ~/.pi/agent/themes themes
-stow -t ~/.pi/agent/extensions extensions
+set -euo pipefail
+
+mkdir -p "$HOME/.pi/agent/themes" "$HOME/.pi/agent/extensions"
+
+stow -t "$HOME/.pi/agent/themes" themes
+stow -t "$HOME/.pi/agent/extensions" extensions

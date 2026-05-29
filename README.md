@@ -32,13 +32,15 @@ Clone the repo, then run:
 ./install
 ```
 
-The install script runs:
+The install script ensures the target directories exist, then runs:
 
 ```sh
-stow -t ~/.pi/agent/ .
+mkdir -p ~/.pi/agent/themes ~/.pi/agent/extensions
+stow -t ~/.pi/agent/themes themes
+stow -t ~/.pi/agent/extensions extensions
 ```
 
-This creates symlinks from this repo into `~/.pi/agent`.
+This creates symlinks from this repo into `~/.pi/agent/themes` and `~/.pi/agent/extensions`.
 
 The installer intentionally does **not** use `stow --adopt`, because this is a public repo and `--adopt` can pull existing private local config into the repository.
 
@@ -56,7 +58,8 @@ git pull
 From the repo root:
 
 ```sh
-stow -D -t ~/.pi/agent/ .
+stow -D -t ~/.pi/agent/themes themes
+stow -D -t ~/.pi/agent/extensions extensions
 ```
 
 ## Repository layout
